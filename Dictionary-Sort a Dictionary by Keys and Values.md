@@ -31,25 +31,21 @@ To write a Python program that sorts a dictionary's:
 
 ## 🧪Program
 ```
-my_dict = {
-    'banana': 'yellow',
-    'apple': 'red',
-    'cherry': 'dark red',
-    'blueberry': 'blue'
-}
-sorted_by_keys = dict(sorted(my_dict.items()))
-sorted_by_values = dict(sorted(my_dict.items(), key=lambda item: item[1]))
-print("Original Dictionary:")
-print(my_dict)
-print("\nDictionary Sorted by Keys:")
-print(sorted_by_keys)
-print("\nDictionary Sorted by Values:")
-print(sorted_by_values)
+
+
+input_dict = {2: 56, 1: 2, 5: 12, 4: 24, 6: 18, 3: 323}
+sorted_items = sorted(input_dict.items())
+print("Keys and Values sorted in alphabetical order by the key")
+for key, value in sorted_items:
+    print(f"({key}, {value})", end=' ')
 ```
 
-## Sample Output
-![442481898-dd21a240-bb09-4e3e-b45c-742df8eb321a](https://github.com/user-attachments/assets/1071a478-bb18-4a0b-a40d-f502b632cb66)
 
+## Sample Output
+<img width="961" height="218" alt="438929274-b38f43b5-8014-4748-bc5d-24ae8167f0a3" src="https://github.com/user-attachments/assets/98d4921b-0283-4b50-969e-cdc004c60b42" />
+
+<img width="962" height="219" alt="438929346-daca5cff-0653-4587-a017-9100a4137da1" src="https://github.com/user-attachments/assets/4ed0bd37-9e56-45dd-a844-cf29d1e8813e" />
 
 ## Result
-Thus , the program has been executed successfully.
+
+Thus the program executed successfully.
