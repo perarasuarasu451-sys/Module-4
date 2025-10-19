@@ -13,21 +13,16 @@ To write a Python program that counts the number of lines in a text file `story.
 
 ## 🧾 Program
 ```
-def count_non_T_lines(filename):
-    count = 0
-    try:
-        with open(filename, 'r') as file:
-            for line in file:
-                if not line.lstrip().startswith('T'):
-                    count += 1
-        print(f"Number of lines not starting with 'T': {count}")
-    except FileNotFoundError:
-        print(f" File '{filename}' not found.")
-count_non_T_lines("story.txt")
-```
 
+file=open("story.txt","r") 
+count=0 
+for lines in file: 
+   if lines [0] not in 'T': 
+      count+=1 
+print(count)
+```
 ## Output
-![442482348-533398cd-8873-48fe-8ce1-b341b9aec84f](https://github.com/user-attachments/assets/f215bb05-22a0-45e5-96a4-12c81f2c8901)
+<img width="361" height="71" alt="438931030-d4b93207-2ea7-4b97-8047-17da8d4ce0e0" src="https://github.com/user-attachments/assets/d5e19636-ee1c-4613-9a58-1d54776c074d" />
 
 ## Result
-Thus the program has been executed successfully.
+Thus the program executed successfully.
