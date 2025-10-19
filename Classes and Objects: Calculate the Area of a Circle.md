@@ -11,24 +11,25 @@ To write a Python program that calculates the **area of a circle** based on the 
 4. **Execute the program**: Create an object of the class and call the method with the radius value.
 
 ## 🧾 Program
-
 ```
+
 import math
+
 class cse:
     def mech(self, radius):
         area = math.pi * radius ** 2
-        return area
-circle = cse()
-try:
-    r = float(input("Enter the radius of the circle: "))
-    result = circle.mech(r)
-    print(f"The area of the circle with radius {r} is {result:.2f}")
-except ValueError:
-    print("Please enter a valid number for radius.")
+        print(f"Area of circle: {area:.2f}")
+
+
+r = float(input())
+
+obj = cse()
+obj.mech(r)
 ```
 
 ## Output
-![442481565-2375c626-8d14-4f5a-91a9-ca135db1596d](https://github.com/user-attachments/assets/c8d7367c-2beb-4d74-84e0-90eb671e82cc)
+<img width="955" height="240" alt="438927051-0fb24ed2-e483-4f0c-8114-cdb94b36b0cf" src="https://github.com/user-attachments/assets/0a5104c2-45f9-479b-ad8d-22bd4b536dd4" />
+
 
 ## Result
-Thus,the program has been executed successfully.
+Thus the program executed successfully.
