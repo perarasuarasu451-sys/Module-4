@@ -12,17 +12,23 @@ To write a Python program that handles an **IndexError** when trying to access a
 
 ## 🧾 Program
 ```
-my_list = [10, 20, 30, 40, 50]
+
+
 try:
-    index = int(input("Enter the index to access (0 to 4): "))
-    print(f"Element at index {index}: {my_list[index]}")
+    # Taking 3 elements input from the user
+    L = []
+    for i in range(3):
+        item = ['laptop','mobile','pen']
+        L.append(item)
+
+    # Trying to access index 4
+    print(L[4])
+
 except IndexError:
-    print(" IndexError: That index is out of range.")
-except ValueError:
-    print(" ValueError: Please enter a valid integer.")
+    print("check index range")
 ```
 ## Output
-![442482028-0460da22-266a-40e4-ae9f-b7f33ef7ebe6](https://github.com/user-attachments/assets/2f395caf-7232-4e31-809b-cebe477111b4)
+<img width="957" height="246" alt="438930470-b2acd206-0aeb-4ec2-a40f-e911fa9e5066" src="https://github.com/user-attachments/assets/4bc4a49f-80c2-4465-896f-e7b4d5d89d8a" />
 
 ## Result
-Thus the program has beeen executed successfully.
+Thus the program executed successfully.
