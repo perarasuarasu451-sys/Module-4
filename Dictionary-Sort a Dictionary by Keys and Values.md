@@ -1,34 +1,47 @@
-# Exception Handling in Python: Avoiding Index Errors
+# 🔤 Dictionary-Python Program to Sort a Dictionary by Keys and Values
+
+This Python program demonstrates how to sort a dictionary:
+- Alphabetically by keys
+- Alphabetically by values
+
+---
 
 ## 🎯 Aim
-To write a Python program that handles an **IndexError** when trying to access an element beyond the available range of a list.
+
+To write a Python program that sorts a dictionary's:
+- Keys in alphabetical order
+- Values in alphabetical order
+
+---
 
 ## 🧠 Algorithm
-1. Define a list `list1` with some integer elements.
-2. Use a **try-except** block:
-   - In the `try` block, attempt to access an index that is out of range (e.g., `list1[5]`).
-   - In the `except` block, catch the error and print a custom message `"You're out of list range"`.
-3. Print the result based on whether the index access succeeds or fails.
 
-## 🧾 Program
+1. **Start the program.**
+2. **Define** a dictionary with key-value pairs.
+3. **Sort by Keys**:
+   - Use `sorted(dictionary.items())`
+   - Convert the result to a dictionary using `dict()`
+4. **Sort by Values**:
+   - Use `sorted(dictionary.items(), key=lambda item: item[1])`
+   - Convert the result to a dictionary using `dict()`
+5. **Display** the original and sorted dictionaries.
+6. **End the program.**
+
+---
+
+## 🧪Program
+```
+data=eval(input())
+sort=dict(sorted(data.items()))
+print("Keys and Values sorted in alphabetical order by the key")
+for key, value in sort.items():
+    print(f"({key}, {value}) ",end="")
 ```
 
+## Sample Output
 
-try:
-    # Taking 3 elements input from the user
-    L = []
-    for i in range(3):
-        item = ['laptop','mobile','pen']
-        L.append(item)
-
-    # Trying to access index 4
-    print(L[4])
-
-except IndexError:
-    print("check index range")
-```
-## Output
-<img width="957" height="246" alt="438930470-b2acd206-0aeb-4ec2-a40f-e911fa9e5066" src="https://github.com/user-attachments/assets/4bc4a49f-80c2-4465-896f-e7b4d5d89d8a" />
+![image](https://github.com/user-attachments/assets/a550855e-67ac-49f1-b4ae-9416d11fd693)
 
 ## Result
+
 Thus the program executed successfully.
